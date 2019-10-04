@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
 </head>
-
+<section class="section1">
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">About us</a>
+    </div>
+</section>
 <body>
     <div class="container">
         <div class="jumbotron">
-            <section class="section1">
-                <div class="topnav">
-                    <a class="active" href="#home">Home</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#contact">About us</a>
-                </div>
-            </section>
+           
 
             <section class="section2">
-                <h1>Le vera pizza</h1>
+                <h1>Le vera pizza</h>
                 <p>The real pizza</p>
             </section>
             <section class="section3">
@@ -33,19 +35,19 @@
                         <form>
                             <div class="form-group" id="Size">
                                 <h2>size</h2>
-                                <input type="radio" name="size" value="400"> Small<br>
-                                <input type="radio" name="size" value="600"> Medium<br>
-                                <input type="radio" name="size" value="800"> Large<br>
+                                <input type="radio" id="size1" value="200"> Small<br>
+                                <input type="radio" id="size2" value="400"> Medium<br>
+                                <input type="radio" id="size3" value="600"> Large<br>
                             </div>
 
                             <div class="form-group" id="Crust">
                                 <h2>crust</h2>
-                                <input type="radio" name="crust" value="400"> Thin crust<br>
-                                <input type="radio" name="crust" value="600"> Thick Crust<br>
-                                <input type="radio" name="crust" value="800"> Deep crust<br>
-                                <input type="radio" name="crust" value="400"> Flat Bread Crust<br>
-                                <input type="radio" name="crust" value="600"> Cheese filled crust<br>
-                                <input type="radio" name="crust" value="800"> Stuffed crust<br>
+                                <input type="radio" name="crust" value="200"> Thin crust<br>
+                                <input type="radio" name="crust" value="300"> Thick Crust<br>
+                                <input type="radio" name="crust" value="300"> Deep crust<br>
+                                <input type="radio" name="crust" value="200"> Flat Bread Crust<br>
+                                <input type="radio" name="crust" value="500"> Cheese filled crust<br>
+                                <input type="radio" name="crust" value="300"> Stuffed crust<br>
                             </div>
 
                             <div class="form-check" id="toppings">
