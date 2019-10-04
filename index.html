@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>le-vera-pizza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <section class="section1">
+                <div class="topnav">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">About us</a>
+                </div>
+            </section>
+
+            <section class="section2">
+                <h1>Le vera pizza</h1>
+                <p>The real pizza</p>
+            </section>
+            <section class="section3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group" id="Size">
+                                <h2>size</h2>
+                                <input type="radio" name="size" value="400"> Small<br>
+                                <input type="radio" name="size" value="600"> Medium<br>
+                                <input type="radio" name="size" value="800"> Large<br>
+                            </div>
+
+                            <div class="form-group" id="Crust">
+                                <h2>crust</h2>
+                                <input type="radio" name="crust" value="400"> Thin crust<br>
+                                <input type="radio" name="crust" value="600"> Thick Crust<br>
+                                <input type="radio" name="crust" value="800"> Deep crust<br>
+                                <input type="radio" name="crust" value="400"> Flat Bread Crust<br>
+                                <input type="radio" name="crust" value="600"> Cheese filled crust<br>
+                                <input type="radio" name="crust" value="800"> Stuffed crust<br>
+                            </div>
+
+                            <div class="form-check" id="toppings">
+                                <h2>Toppings</h2>
+                                <input class="form-check-input" type="checkbox" id="gridCheck1" value="100">BBQ
+                                chicken<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck2" value="150">BBQ beef<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck3" value="150">Sausage<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck4" value="150">Basil<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck5"
+                                    value="150">Pineapple<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck6"
+                                    value="150">Mushrooms<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck7" value="150">Roasted
+                                garlic<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck8" value="150">Green
+                                pepper<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck9" value="150">Black
+                                olive<br>
+                                <input class="form-check-input" type="checkbox" id="gridCheck10" value="150">Banana
+                                peppers<br>
+                            </div>
+                            <span class="btn btn-warning" id="add-address">Another order</span><br><br>
+                            <button class="btn-success" type="submit" id="submit" placeholder="Place Order">Submit
+                                Order<br>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="show-Order">
+                            <h2>Pizza</h2>
+
+                            <p>Size: <span class="first-name"></span></p>
+                            <p>crust:<span class="last-name"></span></p>
+                            <p>Toppings:</p>
+                            <ul id="Total cost">
+                            </ul>
+                        </div>
+                    </div>
+
+
+            </section>
+        </div>
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>
