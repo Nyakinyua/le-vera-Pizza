@@ -32,7 +32,7 @@
             <section class="section3">
                 <div class="row">
                     <div class="col-md-6">
-                        <form>
+                        <form id="pizza1">
                             <div class="form-group" id="Size">
                                 <h2>size</h2>
                                 <input type="radio" id="size1" value="200"> Small<br>
@@ -42,12 +42,12 @@
 
                             <div class="form-group" id="Crust">
                                 <h2>crust</h2>
-                                <input type="radio" name="crust" value="200"> Thin crust<br>
-                                <input type="radio" name="crust" value="300"> Thick Crust<br>
-                                <input type="radio" name="crust" value="300"> Deep crust<br>
-                                <input type="radio" name="crust" value="200"> Flat Bread Crust<br>
-                                <input type="radio" name="crust" value="500"> Cheese filled crust<br>
-                                <input type="radio" name="crust" value="300"> Stuffed crust<br>
+                                <input type="radio" id="crust1" value="200"> Thin crust<br>
+                                <input type="radio" id="crust2" value="300"> Thick Crust<br>
+                                <input type="radio" id="crust3" value="300"> Deep crust<br>
+                                <input type="radio" id="crust4" value="200"> Flat Bread Crust<br>
+                                <input type="radio" id="crust5" value="500"> Cheese filled crust<br>
+                                <input type="radio" id="crust6" value="300"> Stuffed crust<br>
                             </div>
 
                             <div class="form-check" id="toppings">
@@ -76,14 +76,13 @@
                         </form>
                     </div>
                     <div class="col-md-6">
-                        <div id="show-Order">
+                        <div class="show-Order">
                             <h2>Pizza</h2>
 
-                            <p>Size: <span class="first-name"></span></p>
-                            <p>crust:<span class="last-name"></span></p>
-                            <p>Toppings:</p>
-                            <ul id="Total cost">
-                            </ul>
+                            <p>Size: <span class="size-name"></span></p>
+                            <p>crust:<span class="crust-name"></span></p>
+                            <p>Toppings:<span class="toppings-name"></span></p>
+                            <P id="total-cost">Total Cost:</P> 
                         </div>
                     </div>
 

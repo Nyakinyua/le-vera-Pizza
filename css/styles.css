@@ -1,3 +1,11 @@
 body{
     font-family: 'Boogaloo', cursive;
 }
+.how-Order{
+    display: none;
+}
+.order{
+    cursor: pointer;
+    color: #0088cc;
+  }
+  
