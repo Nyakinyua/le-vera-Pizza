@@ -1,11 +1,35 @@
 body{
 font-family: 'Boogaloo', cursive;
+background-color:black;
+color:white;
 }
 .how-Order{
     display: none;
 }
 .order{
     cursor: pointer;
-    color: #0088cc;
+    color: #8d8e92;
+  }
+  .topnav{
+      background-color:rgb(175, 78, 231);
+      overflow: hidden;
+      height: 100vp;
+      padding:30px;
+      color: white;
+      word-spacing: 40px;
+  }
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .img-hover-zoom {
+    height: 400px;
+    overflow: hidden;
+  } 
+  .img-hover-zoom img {
+    transition: transform .10s ease;
+  }
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
   }
   

@@ -15,85 +15,144 @@
 </head>
 <section class="section1">
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">About us</a>
+        <a class="active" href="#home">Home</a>|
+        <a href="#menu">Menu</a>|
+        <a href="#contact">contact</a>|
+        <a href="#photogallery">Gallery</a>
     </div>
 </section>
+
 <body>
     <div class="container">
-        <div class="jumbotron">
-           
 
-            <section class="section2">
-                <h1>Le vera pizza</h1>
-                <p>The real pizza</p>
-            </section>
-            <section class="section3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <form id="pizza1">
-                            <div class="form-group" id="Size">
-                                <h2>size</h2>
-                                <input type="radio" name="size" id="size1" value="200"> Small<br>
-                                <input type="radio" name="size" id="size2" value="400"> Medium<br>
-                                <input type="radio" name="size" id="size3" value="600"> Large<br>
-                            </div>
 
-                            <div class="form-group" id="Crust">
-                                <h2>crust</h2>
-                                <input type="radio" name="crust" id="crust1" value="200"> Thin crust<br>
-                                <input type="radio" name="crust" id="crust2" value="300"> Thick Crust<br>
-                                <input type="radio" name="crust" id="crust3" value="300"> Deep crust<br>
-                                <input type="radio" name="crust" id="crust4" value="200"> Flat Bread Crust<br>
-                                <input type="radio" name="crust" id="crust5" value="500"> Cheese filled crust<br>
-                                <input type="radio" name="crust" id="crust6" value="300"> Stuffed crust<br>
-                            </div>
-
-                            <div class="form-check" id="toppings">
-                                <h2>Toppings</h2>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck1" value="160">BBQ
-                                chicken<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck2" value="150">BBQ beef<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck3" value="120">Sausage<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck4" value="40">Basil<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck5"
-                                    value="150">Pineapple<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck6"
-                                    value="150">Mushrooms<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck7" value="50">Roasted
-                                garlic<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck8" value="70">Green
-                                pepper<br>
-                                <input class="form-check-input" type="checkbox" name="topp" id="gridCheck9" value="60">Black
-                                olive<br>
-                                <input class="form-check-input" type="checkbox"name="topp" id="gridCheck10" value="100">Banana
-                                peppers<br>
-                            </div>
-                            <span class="btn btn-warning" id="add-address">Another order</span><br><br>
-                            <button class="btn-success" type="submit" id="submit" placeholder="Place Order">Submit
-                                Order<br>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="show-Order">
-                            <h2>Pizza</h2>
-
-                            <p id="first">Size: <span class="size-name"></span></p>
-                            <p id="second">crust:<span class="crust-name"></span></p>
-                            <p id="third">Toppings:<span class="toppings-name"></span></p>
-                            <P id="total-cost">Total Cost:<span class="total"></span></P> 
+        <section class="section2">
+            <h1>Le vera pizza <img src="./images/2.png" width="80px"></h1>
+            <p>The real pizza</p>
+        </section>
+        <section class="section3">
+            <div class="row">
+                <div class="col-md-4">
+                    <form id="pizza1">
+                        <div class="form-group" id="Size">
+                            <h2>size</h2>
+                            <input type="radio" name="size" id="size1" value="200"> Small<br>
+                            <input type="radio" name="size" id="size2" value="400"> Medium<br>
+                            <input type="radio" name="size" id="size3" value="600"> Large<br>
                         </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group" id="Crust">
+                        <h2>crust</h2>
+                        <input type="radio" name="crust" id="crust1" value="200"> Thin crust<br>
+                        <input type="radio" name="crust" id="crust2" value="300"> Thick Crust<br>
+                        <input type="radio" name="crust" id="crust3" value="300"> Deep crust<br>
+                        <input type="radio" name="crust" id="crust4" value="200"> Flat Bread Crust<br>
+                        <input type="radio" name="crust" id="crust5" value="500"> Cheese filled crust<br>
+                        <input type="radio" name="crust" id="crust6" value="300"> Stuffed crust<br>
                     </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-check" id="toppings">
+                        <h2>Toppings</h2>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck1" value="160">BBQ
+                        chicken<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck2" value="150">BBQ
+                        beef<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck3"
+                            value="120">Sausage<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck4" value="40">Basil<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck5"
+                            value="150">Pineapple<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck6"
+                            value="150">Mushrooms<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck7" value="50">Roasted
+                        garlic<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck8" value="70">Green
+                        pepper<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck9" value="60">Black
+                        olive<br>
+                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck10" value="100">Banana
+                        peppers<br>
+                    </div>
+                </div>
+                <span class="btn btn-warning" id="add-address">Another order</span><br><br>
+                <button class="btn-success" type="submit" id="submit" placeholder="Place Order">Submit
+                    Order<br>
+                    </form>
+            </div>
+            <div class="col-md-6">
+                <div class="show-Order">
+                    <h2>Pizza</h2>
+
+                    <p id="first">Size: <span class="size-name"></span></p>
+                    <p id="second">crust:<span class="crust-name"></span></p>
+                    <p id="third">Toppings:<span class="toppings-name"></span></p>
+                    <P id="total-cost">Total Cost:<span class="total"></span></P>
+                </div>
+            </div>
 
 
-            </section>
+        </section>
+
+        <section class="section4">
+            <h2>Photo Gallery</h2>
+            <div class="img-hover-zoom">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://as2.ftcdn.net/jpg/02/58/79/47/500_F_258794777_q8CC7Z5a4AFEfcDqeJS9ir6Jtu8QMxl3.jpg" width="280">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/725993/pexels-photo-725993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/1435908/pexels-photo-1435908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
+                </div>
+            </div>
         </div>
+        </section><br><br>
+        <section class="section5">
+            <h2>contact us</h2>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input style="background-color:transparent" type="text" placeholder="Name..."
+                            class="contact-name" id="contact-name">
 
-
-
+                    </div>
+                    <div class="col">
+                        <input style="background-color:transparent" type="text" class="contact-email"
+                        id="contact-email" placeholder="email">
+                    </div>
+                </div>
+                <textarea style="background-color:transparent" name="Name" class="contact-message"
+                    id="contact-message" cols="136" rows="10" placeholder="How can we serve you..."></textarea>
+                </textarea><br>
+                <input type="submit" class="sbmt1" value="Submit">
+            </form><br>
+        </section>
     </div>
-    </div>
+
 </body>
 
 </html>
