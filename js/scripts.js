@@ -1,5 +1,5 @@
 
-/*function PlaceOrder(size,crust,toppings){                                                                                             
+function PlaceOrder(size,crust,toppings){                                                                                             
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
@@ -9,28 +9,6 @@ PlaceOrder.prototype.fullOrder=function(){
 }
 
 //user interface
-$(document).ready(function(){
-    $("#another").click(function(){
-        $("another-order")
-    })
-    $("form#pizza1").submit(function (event) {
-        event.preventDefault();
-        var inputtedSize = $("input[type=radio][name=size]:checked").val();
-        var inputtedCrust = $("input[type=radio][name=crust]:checked").val();
-         var inputtedToppings = [];
-        $("input[type=checkbox][name='topp']:checked").each(function () {
-            inputtedToppings.push($(this).val());
-            
-          });
-          var newOrder = new PlaceOrder(inputtedSize, inputtedCrust, inputtedToppings);
-          console.log(newOrder*/
-
-//    });
-
-//})
-
-
-
 var sizes= ["small", "medium", "large"]
 $(document).ready(function(){
   var Amount = 0;
@@ -79,3 +57,4 @@ $(document).ready(function(){
     }
 });
 })
+
