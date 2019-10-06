@@ -57,8 +57,25 @@ $(document).ready(function(){
     $(".the-order").show();
    
   })
+
+
+
+   //form inputs
+   $(".sbmt1").click(function (event) {
+    event.preventDefault();
+    var name = $("#contact-name").val();
+    var email = $("#contact-email").val();
+    if ($("#contact-name").val() == "") {
+            alert("Please input name")
+    }
+    else if ($("#contact-email").val() == "") {
+            alert("Please input email")
+    }
+    else if ($("#contact-message").val() == "") {
+            alert("Please input your message")
+    }
+    else {
+            alert("Thank you " + name + "," + " for contacting us. Youwill be served.");
+    }
+});
 })
-/*var toppingsArr = [];
-$("input[type=checkbox]:checked").each(function() {
-    toppingsArr.push($(this).val());
-});*/
