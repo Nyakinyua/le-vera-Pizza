@@ -31,61 +31,12 @@ $(document).ready(function(){
     $(".the-order").show();
    
   })
-})
-/*function Order(size,crust,toppings){                                                                                             
-  this.size = size;
-  this.crust = crust;
-  this.toppings = toppings;
-}
-
-//!/ Give functions useful names
-Order.prototype.generateReceipt = function(){
-  return this.size + "" + this.crust + " " + this.toppings;
-}
-
-//!/ Give variables useful names
-Order.prototype.calculatePriceFor = function(quantity, deliveryFee) {
-  return (this.size + this.crust + this.toppings) * quantity + deliveryFee
-}
-
-$(document).ready(function () {
-var deliveryFee = 0;
-
-$("#order").click(function () {
-  var deliveryRadioValue = $("input[name=delivery]:checked").val(); 
-  var shouldDeliver = (deliveryRadioValue === "yes"); 
-
-  if (shouldDeliver) {
-    deliveryFee = 1000;
-    var location = prompt("What is your location?");
-    alert("Your order will be delivered to " + location + ". You will pay an extra " + deliveryFee + "Ksh for delivery.");
-  }
-
-  var sizeCost = parseFloat(document.getElementById("sort").value);
-  var crustCost = parseFloat(document.getElementById("crusty").value);
-
-
-  //!/ https://www.tutorialrepublic.com/faq/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-jquery.php
-  var toppingsCost = 0;
-  $.each($("input[name='toppings']:checked"), function () {
-    toppingsCost += parseFloat($(this).val());
+  $("#checkout").click(function(){
+    var totalSummary=new ShowSummary((document.getElementById("sort"),(document.getElementById("crusty")), (document.getElementById("toppings")),(document.getElementById("num")))
   });
-
-  var order = new Order(sizeCost, crustCost, toppingsCost)
-
-  var quantity = parseFloat(document.getElementById("num").value);
-  var total = order.calculatePriceFor(quantity, deliveryFee)
-
-  alert("You will pay KES." + total + ".")
-
-  //!/ Finish this up
-  document.getElementById("getsize").innerHTML = sizeCost;
-   document.getElementById("getcrust").innerHTML = crustCost;
- document.getElementById("gettopping").innerHTML = toppingsCost;
-  document.getElementById("sum").innerHTML = total;
-  $(".the-order").show();
-
 })
+                                                                                           
+
 
 // contact form inputs
 $(".sbmt1").click(function (event) {
@@ -105,4 +56,3 @@ $(".sbmt1").click(function (event) {
     alert("Thank you for contacting us, " + name + ". You will be served.");
   }
 });
-})*/
