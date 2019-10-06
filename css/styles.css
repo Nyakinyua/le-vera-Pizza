@@ -47,12 +47,21 @@ color:white;
   text-align: center;
   
   }
-  div {
-    width: 100px;
-    height: 100px;
-    -webkit-animation-name: ; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
+  .hover02 figure img {
+    width: 300px;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
   }
-
+  .hover02 figure:hover img {
+    width: 350px;
+  }
+  
+  
+  /* Zoom Out #2 */
+  .hover04 figure img {
+    width: 400px;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }

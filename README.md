@@ -1,9 +1,11 @@
 # le vera pizza
 #### An application that helps user select their pizza preferances and have it delivered at their door step, 2.0
-#### By **Nyakinyua**
+#### By **[Nyakinyua](https://www.https://github.com/Nyakinyua)**
 ## Description
 This is a web application that allows a user to place an order depending on the pizza size they'd like, the crust and also the kind of toppings they want o their pizza. It also allows useer to select the number of pizzas they'd like. Finally, the user gets to choose whether they'd want their pizza delivered or not, if they want it delivered, they are required to enter their location and add a little delivery fee.
 Go ahead and try! Have your Pizza delivered in less than 30 minutes!
+## screenshot
+![alt]
 ## Setup/Installation Requirements
 There are no set up or installation reqiurements
 ## Known Bugs
