@@ -36,183 +36,180 @@
             <p>The real pizza</p>
         </section>
         <section class="section3">
-        <div class="card">
-        <div id="order-list">
-            
-                <br>
-                <br>
-                <h3> Please enter the required information below.</h3>
-                <br>
-                <br>
-                <div class="form-group">
-                    <label for="usr">Names:</label>
-                    <input type="text" class="form-control" id="names" placeholder="Enter your names please">
+            <div class="card">
+                <div id="order-list">
+
                     <br>
-
-                    <label>Email Adress:</label>
-                    <input type="text" class="form-control" placeholder="Email" id="email">
                     <br>
+                    <h3> Please enter the required information below.</h3>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="usr">Names:</label>
+                        <input type="text" class="form-control" id="names" placeholder="Enter your names please">
+                        <br>
+
+                        <label>Email Adress:</label>
+                        <input type="text" class="form-control" placeholder="Email" id="email">
+                        <br>
 
 
 
-                    <div id="place">
+                        <div id="place">
 
 
-                        <div id="choice">
-                            <div id="size">
-                                <label for="">Size</label>
-                                <select required class="form-control" id="sort">
-                                    <option value="500">Small</option>
-                                    <option value="800">Medium</option>
-                                    <option value="1000">Large</option>
+                            <div id="choice">
+                                <div id="size">
+                                    <label for="">Size</label>
+                                    <select required class="form-control" id="sort">
+                                        <option value="500">Small</option>
+                                        <option value="800">Medium</option>
+                                        <option value="1000">Large</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div id="crust">
+                                    <label for="">Crust</label>
+                                    <select required class="form-control" id="crusty">
+                                        <option value="100" name="small">Crispy</option>
+                                        <option value="200" name="medium">Stuffed</option>
+                                        <option value="300" name="large">Gluten Free</option>
+                                        <option value="500" name="small">italian</option>
+                                        <option value="300" name="medium">new york pan</option>
+                                        <option value="200" name="large">sicilian style</option>
+                                        <option value="500" name="small">neopalitan</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div id="topping">
+                                    <label for="">Toppings</label>
+                                    <select multiple required class="form-control" id="toppings">
+                                        <option value="100">BBQ Chicken</option>
+                                        <option value="100">BBQ Beef</option>
+                                        <option value="100">Sausage</option>
+                                        <option value="100">Basil</option>
+                                        <option value="100">Pineapple</option>
+                                        <option value="100">Mushrooms</option>
+                                        <option value="100">Roasted Garlic</option>
+                                        <option value="100">Green pepper</option>
+                                        <option value="100">Black olive</option>
+                                        <option value="100">Banana peppers</option>
+                                        ​
+                                    </select>
+                                </div>
+                                <br>
+                                <label>Please select the number of pizzas you would like delivered to you.</label>
+                                <select name="quantity" id="num">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
-                            </div>
-                            <br>
-                            <div id="crust">
-                                <label for="">Crust</label>
-                                <select required class="form-control" id="crusty">
-                                    <option value="100" name="small">Crispy</option>
-                                    <option value="200" name="medium">Stuffed</option>
-                                    <option value="300" name="large">Gluten Free</option>
-                                    <option value="500" name="small">italian</option>
-                                    <option value="300" name="medium">new york pan</option>
-                                    <option value="200" name="large">sicilian style</option>
-                                    <option value="500" name="small">neopalitan</option>
-                                </select>
-                            </div>
-                            <br>
-                            <div id="toppings">
-                                <label name="topp">Toppings(check all that apply)</label><br>
-                                <input type='checkbox' value="200">Cheese
-                                <input type='checkbox' value="500">Mushrooms
-                                <input type='checkbox' value="200">Pepperoni
-                                <input type='checkbox' value="200">Sausage<br>
-                                <input type='checkbox' value="50">Onions
-                                <input type='checkbox' value="500">Bacon
-                                <input type='checkbox' value="600">Olive
-                                <input type='checkbox' value="200">Roasted garlic
-                                <input type='checkbox' value="50">Basil<br>
-                                <input type='checkbox' value="100">Banana peppers
-                                <input type='checkbox' value="200">BBQ chicken
-                                <input type='checkbox' value="250">BBQ beef
-                                <input type='checkbox' value="150">Spinach<br>
-                                <input type='checkbox' value="300">Ham
-                                <input type='checkbox' value="110">Green pepper
-
-                            </div>
-                            <br>
-                            <label>Please select the number of pizzas you would like delivered to you.</label>
-                            <select name="quantity" id="num">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                            <br>
-                            <div class="pizza-deliver">
-                                <p>Would you like your pizza to be delivered to you?</p>
-                                <label><input type="radio" name="Yes" value="yes" id="myRadio">Yes</label>
-                                <label><input type="radio" name="Yes" value="no">No</label>
+                                <br>
+                                <div class="pizza-deliver">
+                                    <p>Would you like your pizza to be delivered to you?</p>
+                                    <label><input type="radio" name="Yes" value="yes" id="myRadio">Yes</label>
+                                    <label><input type="radio" name="Yes" value="no">No</label>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button id="order">Submit</button>
+            </div>
+        </section><br><br>
+
+        <section class="section4">
+            <h2>Photo Gallery</h2>
+            <div class="img-hover-zoom">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
+                        <p>Extra cheese</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
+                        <p>Gluten-free</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://as2.ftcdn.net/jpg/02/58/79/47/500_F_258794777_q8CC7Z5a4AFEfcDqeJS9ir6Jtu8QMxl3.jpg"
+                            width="280">
+                        <p>crispy pizza</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/725993/pexels-photo-725993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
+                        <p>Oven fresh pizza</p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://images.pexels.com/photos/1435908/pexels-photo-1435908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="280">
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <button  id="order">Submit</button>
-        </div>
         </section><br><br>
-        
-        <section class="section4">
-                <h2>Photo Gallery</h2>
-                <div class="img-hover-zoom">
+        <center>
+            <section class="section5">
+                <h2>contact us</h2>
+                <form>
                     <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
-                                <p>Extra cheese</p>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
-                                <p>Gluten-free</p>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://as2.ftcdn.net/jpg/02/58/79/47/500_F_258794777_q8CC7Z5a4AFEfcDqeJS9ir6Jtu8QMxl3.jpg"
-                                width="280">
-                                <p>crispy pizza</p>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/725993/pexels-photo-725993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
-                                <p>Oven fresh pizza</p>
-                        </div>
+                        <div class="col">
+                            <input style="background-color:transparent" type="text" placeholder="Name..."
+                                class="contact-name" id="contact-name">
 
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
                         </div>
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="https://images.pexels.com/photos/1435908/pexels-photo-1435908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                width="280">
+                        <div class="col">
+                            <input style="background-color:transparent" type="text" class="contact-email"
+                                id="contact-email" placeholder="email">
                         </div>
                     </div>
-                </div>
-            </section><br><br>
-            <center>
-                <section class="section5">
-                    <h2>contact us</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <input style="background-color:transparent" type="text" placeholder="Name..."
-                                    class="contact-name" id="contact-name">
+                    <textarea style="background-color:transparent" name="Name" class="contact-message"
+                        id="contact-message" cols="130" rows="10" placeholder="How can we serve you..."></textarea>
+                    </textarea><br>
+                    <input type="submit" class="sbmt1" value="Submit">
+                </form><br>
+            </section><br><br><br>
+            <footer>
+                <h3>le vera pizza</h3>
+                <p>8721 Lumumba Drive, Roysambu, Nairobi City</p>
+                <p>pizza hotline +254721317715</p>
+                <h3>Hours</h3>
+                <P>Monday-Friday 9am-10pm</P><br>
+                <a href="https://twitter.com/login"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUrx7vAEJiPqrZserj4cct2_Nn4-Y01NBSzFHH2JitmvOVL3uqQ"
+                        width="50"></a>
+                <a href="https://www.facebook.com/"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacfY0X21unnnMUZOvjA4igLBYeUdF3oDriHOA51QEsK-9pHug-w"
+                        width="50"></a>
+                <a href="https://www.instagram.com"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5swsH8z8-HNO9KGUnkeThUx06DEOOgX7jdwlLxMR06XTa20WPg"
+                        width="50"></a>
 
-                            </div>
-                            <div class="col">
-                                <input style="background-color:transparent" type="text" class="contact-email"
-                                    id="contact-email" placeholder="email">
-                            </div>
-                        </div>
-                        <textarea style="background-color:transparent" name="Name" class="contact-message"
-                            id="contact-message" cols="130" rows="10" placeholder="How can we serve you..."></textarea>
-                        </textarea><br>
-                        <input type="submit" class="sbmt1" value="Submit">
-                    </form><br>
-                </section><br><br><br>
-                <footer>
-                    <h3>le vera pizza</h3>
-                    <p>8721 Lumumba Drive, Roysambu, Nairobi City</p>
-                    <p>pizza hotline +254721317715</p>
-                    <h3>Hours</h3>
-                    <P>Monday-Friday 9am-10pm</P><br>
-                    <a href="https://twitter.com/login"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUrx7vAEJiPqrZserj4cct2_Nn4-Y01NBSzFHH2JitmvOVL3uqQ"
-                            width="50"></a>
-                    <a href="https://www.facebook.com/"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacfY0X21unnnMUZOvjA4igLBYeUdF3oDriHOA51QEsK-9pHug-w"
-                            width="50"></a>
-                    <a href="https://www.instagram.com"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5swsH8z8-HNO9KGUnkeThUx06DEOOgX7jdwlLxMR06XTa20WPg"
-                            width="50"></a>
-
-                    <p>Copyright © 2018 le vera Pizza - All Rights Reserved.</p>
-                </footer>
-        </div>
-        </center>
+                <p>Copyright © 2018 le vera Pizza - All Rights Reserved.</p>
+            </footer>
+    </div>
+    </center>
 </body>
 
 </html>
