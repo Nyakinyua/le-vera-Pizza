@@ -19,17 +19,16 @@ color:white;
   #topnav a:hover {
     background-color: #ddd;
     color: black;
-}
-  
 
+}
   .img-hover-zoom {
     height: 400px;
     overflow: hidden;
   } 
-   #img1,#img2, #img3,#img4, #img5,#img6,#img7,#img8 {
+  .img-hover-zoom img {
     transition: transform .10s ease;
   }
-  .img-hover-zoom:hover #img1 {
+  .img-hover-zoom:hover img {
     transform: scale(1.5);
   }
   footer{
