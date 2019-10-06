@@ -1,5 +1,5 @@
 
-function PlaceOrder(size,crust,toppings){                                                                                             
+/*function PlaceOrder(size,crust,toppings){                                                                                             
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
@@ -10,6 +10,9 @@ PlaceOrder.prototype.fullOrder=function(){
 
 //user interface
 $(document).ready(function(){
+    $("#another").click(function(){
+        $("another-order")
+    })
     $("form#pizza1").submit(function (event) {
         event.preventDefault();
         var inputtedSize = $("input[type=radio][name=size]:checked").val();
@@ -20,24 +23,42 @@ $(document).ready(function(){
             
           });
           var newOrder = new PlaceOrder(inputtedSize, inputtedCrust, inputtedToppings);
+          console.log(newOrder*/
+
+//    });
+
+//})
+
+
+
+var sizes= ["small", "medium", "large"]
+$(document).ready(function(){
+  var Amount = 0;
+  $("#order").click(function(){
+    var checkVal = $("input[name=Yes]:checked").val();
+    if(checkVal === "yes") {
+      Amount = 1000;
+      var getLocation = prompt("What is your location?");
+      alert("Your order will be delivered at " +  getLocation  +  "  you will pay an extra 200 Ksh for delivery fee.");
+    }
+  })
+  $("#order").click(function(){
+    var Size = parseFloat(document.getElementById("sort").value);
+    var Crust = parseFloat(document.getElementById("crusty").value);
+    var Topping = [];
+    parseFloat(document.getElementById("toppings").value);
+    var Quantity = parseFloat(document.getElementById("num").value);
+    var Total = ((Size + Crust + Topping) * Quantity + Amount);
+    alert("You will pay " + Total + " Ksh amount of money.")
+    document.getElementById("getsize").innerHTML = Size;
+    document.getElementById("getcrust").innerHTML = Crust;
+    document.getElementById("gettopping").innerHTML = Topping;
+    document.getElementById("sum").innerHTML = Total;
+    $(".the-order").show();
    
-
-         $("p#first").append("<span class='size-name'>"+newOrder.size + "</span></p>");
-          $("p#second").append("<span class='crust-name'>" + newOrder.crust + "</span></P>");
-          $("p#third").append("<span class='toppings-name'>" + newOrder.toppings + "</span></p>");
-          $(".show-Order").append("<p><span class='total'>" + newOrder.fullOrder() + "</span></P>");
-          $("input[type=radio][name=size]:checked").val("");
-          $("input[type=radio][name=crust]:checked").val("");
-          $("input[type=checkbox][name=topp]:checked").val("");
-
-          $(".order").last().click(function(){
-              $(".show-Order").show();
-              $(".size-name").text(newOrder.size);
-              $(".crust-name").text(newOrder.crust);
-              $(".toppings-name").text(newOrder.toppings);
-          })
-
-    });
-
-});
-
+  })
+})
+/*var toppingsArr = [];
+$("input[type=checkbox]:checked").each(function() {
+    toppingsArr.push($(this).val());
+});*/

@@ -15,17 +15,19 @@
 </head>
 <section class="section1">
     <div class="sticky">
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>|
-        <a href="#menu">Menu</a>|
-        <a href="#contact">contact</a>|
-        <a href=".section4">Gallery</a>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXgmDQ2m1BZaQ-07QFHtbquZ0Mo_WyI_rJJUo2oFRu5YugJR03Q" width="80">
-    </div>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>||
+            <a href="#menu">Menu</a>||
+            <a href=".section5">contact</a>||
+            <a href=".section4">Gallery</a>||
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXgmDQ2m1BZaQ-07QFHtbquZ0Mo_WyI_rJJUo2oFRu5YugJR03Q"
+                width="80">
+        </div>
     </div>
 </section>
 
 <body>
+
     <div class="container">
 
 
@@ -33,137 +35,181 @@
             <h1>Le vera pizza</h1>
             <p>The real pizza</p>
         </section>
-        <section class="section3">
-            <div class="row">
-                <div class="col-md-4">
-                    <form id="pizza1">
-                        <div class="form-group" id="Size">
-                            <h2>size</h2>
-                            <input type="radio" name="size" id="size1" value="200"> Small<br>
-                            <input type="radio" name="size" id="size2" value="400"> Medium<br>
-                            <input type="radio" name="size" id="size3" value="600"> Large<br>
+        <div id="order-list">
+            <div>
+                <br>
+                <br>
+                <h3> Please enter the required information below.</h3>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="usr">Names:</label>
+                    <input type="text" class="form-control" id="names" placeholder="Enter your names please">
+                    <br>
+
+                    <label>Email Adress:</label>
+                    <input type="text" class="form-control" placeholder="Email" id="email">
+                    <br>
+
+
+
+                    <div id="place">
+
+
+                        <div id="choice">
+                            <div id="size">
+                                <label for="">Size</label>
+                                <select required class="form-control" id="sort">
+                                    <option value="500">Small</option>
+                                    <option value="800">Medium</option>
+                                    <option value="1000">Large</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div id="crust">
+                                <label for="">Crust</label>
+                                <select required class="form-control" id="crusty">
+                                    <option value="100" name="small">Crispy</option>
+                                    <option value="200" name="medium">Stuffed</option>
+                                    <option value="300" name="large">Gluten Free</option>
+                                    <option value="500" name="small">italian</option>
+                                    <option value="300" name="medium">new york pan</option>
+                                    <option value="200" name="large">sicilian style</option>
+                                    <option value="500" name="small">neopalitan</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div id="toppings">
+                                <label for="">Toppings(check all that apply)</label><br>
+                                <input  type='checkbox' value="200">Cheese
+                                <input type='checkbox' value="500">Mushrooms
+                                <input type='checkbox' value="200">Pepperoni
+                                <input type='checkbox' value="200">Sausage<br>
+                                <input type='checkbox' value="50">Onions
+                                <input type='checkbox' value="500">Bacon
+                                <input type='checkbox' value="600">Olive
+                                <input type='checkbox' value="200">Roasted garlic
+                                <input type='checkbox' value="50">Basil<br>
+                                <input type='checkbox' value="100">Banana peppers
+                                <input type='checkbox' value="200">BBQ chicken
+                                <input type='checkbox' value="250">BBQ beef
+                                <input type='checkbox' value="150">Spinach<br>
+                                <input type='checkbox' value="300">Ham
+                                <input type='checkbox' value="110">Green pepper
+
+                            </div> 
+                            <br>
+                                <label>Please select the number of pizzas you would like delivered to you.</label>
+                                <select name="quantity" id="num">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <br>
+                                <div class="pizza-deliver">
+                                    <p>Would you like your pizza to be delivered to you?</p>
+                                    <label><input type="radio" name="Yes" value="yes" id="myRadio">Yes</label>
+                                    <label><input type="radio" name="Yes" value="no">No</label>
+                                </div>
+                            </div>
                         </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group" id="Crust">
-                        <h2>crust</h2>
-                        <input type="radio" name="crust" id="crust1" value="200"> Thin crust<br>
-                        <input type="radio" name="crust" id="crust2" value="300"> Thick Crust<br>
-                        <input type="radio" name="crust" id="crust3" value="300"> Deep crust<br>
-                        <input type="radio" name="crust" id="crust4" value="200"> Flat Bread Crust<br>
-                        <input type="radio" name="crust" id="crust5" value="500"> Cheese filled crust<br>
-                        <input type="radio" name="crust" id="crust6" value="300"> Stuffed crust<br>
                     </div>
                 </div>
+                <br>
+                <br>
+                <button id="order">Submit</button>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="form-check" id="toppings">
-                        <h2>Toppings</h2>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck1" value="160">BBQ
-                        chicken<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck2" value="150">BBQ
-                        beef<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck3"
-                            value="120">Sausage<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck4" value="40">Basil<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck5"
-                            value="150">Pineapple<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck6"
-                            value="150">Mushrooms<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck7" value="50">Roasted
-                        garlic<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck8" value="70">Green
-                        pepper<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck9" value="60">Black
-                        olive<br>
-                        <input class="form-check-input" type="checkbox" name="topp" id="gridCheck10" value="100">Banana
-                        peppers<br>
+
+
+            </section><br><br><br>
+
+            <section class="section4">
+                <h2>Photo Gallery</h2>
+                <div class="img-hover-zoom">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://as2.ftcdn.net/jpg/02/58/79/47/500_F_258794777_q8CC7Z5a4AFEfcDqeJS9ir6Jtu8QMxl3.jpg"
+                                width="280">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/725993/pexels-photo-725993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://images.pexels.com/photos/1435908/pexels-photo-1435908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="280">
+                        </div>
                     </div>
                 </div>
-                <span class="btn btn-warning" id="add-address">Another order</span><br><br>
-                <button class="btn-success" type="submit" id="submit" placeholder="Place Order">Submit
-                    Order<br>
-                    </form>
-            </div>
-            <div class="col-md-6">
-                <div class="show-Order">
-                    <h2>Pizza</h2>
+            </section><br><br>
+            <center>
+                <section class="section5">
+                    <h2>contact us</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input style="background-color:transparent" type="text" placeholder="Name..."
+                                    class="contact-name" id="contact-name">
 
-                    <p id="first">Size: <span class="size-name"></span></p>
-                    <p id="second">crust:<span class="crust-name"></span></p>
-                    <p id="third">Toppings:<span class="toppings-name"></span></p>
-                    <P id="total-cost">Total Cost:<span class="total"></span></P>
-                </div>
-            </div>
+                            </div>
+                            <div class="col">
+                                <input style="background-color:transparent" type="text" class="contact-email"
+                                    id="contact-email" placeholder="email">
+                            </div>
+                        </div>
+                        <textarea style="background-color:transparent" name="Name" class="contact-message"
+                            id="contact-message" cols="130" rows="10" placeholder="How can we serve you..."></textarea>
+                        </textarea><br>
+                        <input type="submit" class="sbmt1" value="Submit">
+                    </form><br>
+                </section><br><br><br>
+                <footer>
+                    <h3>le vera pizza</h3>
+                    <p>8721 Lumumba Drive, Roysambu, Nairobi City</p>
+                    <p>pizza hotline +254721317715</p>
+                    <h3>Hours</h3>
+                    <P>Monday-Friday 9am-10pm</P><br>
+                    <a href="https://twitter.com/login"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUrx7vAEJiPqrZserj4cct2_Nn4-Y01NBSzFHH2JitmvOVL3uqQ"
+                            width="50"></a>
+                    <a href="https://www.facebook.com/"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacfY0X21unnnMUZOvjA4igLBYeUdF3oDriHOA51QEsK-9pHug-w"
+                            width="50"></a>
+                    <a href="https://www.instagram.com"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5swsH8z8-HNO9KGUnkeThUx06DEOOgX7jdwlLxMR06XTa20WPg"
+                            width="50"></a>
 
-
-        </section>
-
-        <section class="section4">
-            <h2>Photo Gallery</h2>
-            <div class="img-hover-zoom">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-                <div class="col-md-3">
-                    <img src="https://as2.ftcdn.net/jpg/02/58/79/47/500_F_258794777_q8CC7Z5a4AFEfcDqeJS9ir6Jtu8QMxl3.jpg" width="280">
-                </div>
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/725993/pexels-photo-725993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-                <div class="col-md-3">
-                    <img src="https://images.pexels.com/photos/1435908/pexels-photo-1435908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280">
-                </div>
-            </div>
+                    <p>Copyright © 2018 le vera Pizza - All Rights Reserved.</p>
+                </footer>
         </div>
-        </section><br><br>
-        <section class="section5">
-            <h2>contact us</h2>
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input style="background-color:transparent" type="text" placeholder="Name..."
-                            class="contact-name" id="contact-name">
-
-                    </div>
-                    <div class="col">
-                        <input style="background-color:transparent" type="text" class="contact-email"
-                        id="contact-email" placeholder="email">
-                    </div>
-                </div>
-                <textarea style="background-color:transparent" name="Name" class="contact-message"
-                    id="contact-message" cols="130" rows="10" placeholder="How can we serve you..."></textarea>
-                </textarea><br>
-                <input type="submit" class="sbmt1" value="Submit">
-            </form><br>
-        </section><br><br><br>
-        <footer>
-            <h1>le vera pizza</h1>
-            <p>8721 Lumumba Drive, Roysambu, Nairobi City</p>
-            <p>pizza hotline +254721317715</p>
-            <h3>Hours</h3>
-            <P>Monday-Friday 9am-10pm</P><br>
-            <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAACFhYXt7e0WFhaurq77+/ugoKDPz8/z8/O4uLjGxsYkJCQQEBC1tbVaWlpgYGDe3t5MTExSUlKoqKiZmZksLCx6enpra2uLi4vk5OS+vr45OTnX19eqqqoyMjJoaGhAQECRkZF/f38eHh4vLy9HR0dzc3PglWmDAAAMJklEQVR4nOVd6WLquA4G0oRAKCUsZW8Jndu8/xvek7JjyZZkOaHl+zXTQ2wrsbVLbrWCI9pm8axTjr43g9d2hdfB5ntUdmZxto3CTx8U+XA/GrTtGIz2w7zphUqQx/N3B23XeJ/Hv4nMvPvGIO6Ct+5voDLplyLqTij7SdMk2ND7GHuRd8D4o9c0ITCSWIO8I5Hx433JdKFG3gGLtGmSrpF0X5Xpq/DafZQPuZoHIO+A+app4v4hnQSjr8Kk6c2aFUHpq1BkDdKXhqfvh8amvmOuJx1cGDeh7PS0xYMdi9q1gFmt9FWY1UpfGkL+ufBa33FMdpIFbia78mtZ4avcTTaSIXY1qQB93rImnWmWQ6eol2fTDlOa9mugL2HYfotp6mYQvXTKYFpvwT9jRl3KvM/xwUR9suoXWAGgrWM8leiTqylNwM7VqbogcrmVKkyGctHVG1LO5SCYh27tnvx96iuZe1OCB2utQo+BjnPicqsy0dbt6umoTHQH5yFRNFiTrmuysdpcJ0Qv9hkH2pKq7zjzL8qHcWuf7j0EC88cB1LnSBxh5zEvgQ5+a23fOIrTTq0TfehNZODDOvNUaxqrpRSEq13BysGVLCrbHEV4Z9iqCP1+vywTxBoTOBFbVvDlP7yFwEldnoWeRZfzJtGyRev5gAdYPqPnRsWZzGe9AeroE12JF7vBxURoFmoC300eQgMX9KFkfM2rQVU1bZ2QCFw3FipwETaevl5PBWrfyF459sZCehFcwLwoL5LBsPdVr+/5HhhzF+wrjHUN9VfNwhBZF5u5Y4yryWDeAZg/k8lQMS7TdES2QoqsjcdtEBfCIxCIkjjgjIGwrMcgECWRweSRrd78GTzBd4EJ/HzTXPQaCEel+jPh6FKzcvAesFx8oz0Mxweb1GQgwKyC5LWF92hzuigGWOei7FMwhC3S+wID1Jt37udgTvyIGeewVuKWaGCWRRMGrxugZvnqegrkUfW7LGgArQMHz+9Bz3zWs14BQPeU3ccJZkU84iE8ADyKC9sTOfREnX5RLkA/qi3ND5Ixk9qWKwHkDbfIblBSPGhpwBEg48AlRvHL9mgFaJ8W2I8hmwT98cMA+iyYGQX9tob4YH82343KTjeT5XKs6N8FOoWhZX16YyJsupJDD8l9+CRCbMlv/S4AGSULcNPYvfbAukEBAH3tkEkIrS2cTWIaoqlDnYbSGaAXBZiUQW0mPFp2S8927NSmATsKMNghw9dtUojVgcSWBt29/G5dtN0BQsjIMNkWkEn27lxn2t6x6DoDFNQXHIPzq/3hf53DAfu9a/wIsAvdzrkRNBIBDgIrEqNseeJDbqUDkOTGzgZEhduH/LNQiZuYkol7BsV4Awa8XxdgNrn9VgeNia8UjDgEksYH/IN3RhTEZ8gr5dqPtgwgE7RjADx4y2uASQkjn37K00Sch/AGI9qgAKO8Pb6AYejWEi86AotEVknY6RCmjjMDbMIbMxF4raV7qVccjLFRId0JxX+H9zwsn</a>
-        </footer>
-    </div>
-
+        </center>
 </body>
 
 </html>

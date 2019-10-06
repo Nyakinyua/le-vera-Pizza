@@ -6,10 +6,6 @@ color:white;
 .how-Order{
     display: none;
 }
-.order{
-    cursor: pointer;
-    color: #8d8e92;
-  }
   .topnav{
       background-color:black;
       overflow: hidden;
@@ -19,24 +15,11 @@ color:white;
       word-spacing: 40px;
       font-size:17px;
       float:center;
-  }
+}
   #topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  .sticky {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    top: 10px;
-    z-index: 100;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
+}
   
 
   .img-hover-zoom {
@@ -51,5 +34,8 @@ color:white;
   }
   footer{
   text-align: center;
+  }
+  h1{
+    font-size: 70px;
   }
 
