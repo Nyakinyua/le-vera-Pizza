@@ -25,9 +25,9 @@ The application is not able to take orders of more than 5 pizzas at a go.
 |Delivery option| yes|your order will be delivered at Yaya center 
 | Press Submit|     | 
 ## Support and contact details
-Contribution and improvements to the application are welcome. Feel free to reach out to 
+Contribution and improvements to the application are welcome. Feel free to reach out to wanyakinyua968@gmail.com
 ### License
 *This work is licensed by CC Share Alike.
-Copyright (c) 2019*
+ *Copyright (c) 2019*
 
  
