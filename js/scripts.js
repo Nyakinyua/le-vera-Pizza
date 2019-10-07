@@ -1,3 +1,4 @@
+//business logic
 function ShowSummary(getSize,getCrust,getToppings){                                                                                             
      this.size = getSize;
     this.crust = getCrust;
@@ -17,6 +18,8 @@ $(document).ready(function(){
       alert("Your order will be delivered at " +  getLocation  +  "  you will pay an extra 200 Ksh for delivery fee.");
     }
   })
+
+  //user logic
   $("#order").click(function(){
     var Size = parseFloat(document.getElementById("sort").value);
     var Crust = parseFloat(document.getElementById("crusty").value);
