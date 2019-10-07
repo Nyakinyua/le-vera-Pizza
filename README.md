@@ -5,12 +5,16 @@
 This is a web application that allows a user to place an order depending on the pizza size they'd like, the crust and also the kind of toppings they want o their pizza. It also allows useer to select the number of pizzas they'd like. Finally, the user gets to choose whether they'd want their pizza delivered or not, if they want it delivered, they are required to enter their location and add a little delivery fee.
 Go ahead and try! Have your Pizza delivered in less than 30 minutes!
 ## screenshot
-![alt]
+![](images/screen1.png)
 ## Setup/Installation Requirements
 There are no set up or installation reqiurements
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+The application is not able to take orders of more than 5 pizzas at a go.
 ## Technologies Used
+- Javascript. *JQuery
+- HTML.
+- Bootstrap.
+- Markdown.
 
 ## BDD
 | Behaviour      | Input        | Output       |
@@ -23,6 +27,7 @@ There are no set up or installation reqiurements
 ## Support and contact details
 Contribution and improvements to the application are welcome. Feel free to reach out to 
 ### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **Nyakinyua**
+*This work is licensed by CC Share Alike.
+Copyright (c) 2019*
+
  
