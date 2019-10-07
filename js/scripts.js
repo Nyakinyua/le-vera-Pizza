@@ -1,12 +1,12 @@
 //business logic
-function ShowSummary(getSize,getCrust,getToppings){                                                                                             
+/*unction ShowSummary(getSize,getCrust,getToppings){                                                                                             
      this.size = getSize;
     this.crust = getCrust;
      this.toppings = getToppings;
  }
  ShowSummary.prototype.totalSummary=function(){
     return this.getsize + "" + this.getcrust + " " + this.getToppings;
- }
+ }*/
 var sizes= ["small", "medium", "large"]
 $(document).ready(function(){
   var Amount = 0;
@@ -34,10 +34,11 @@ $(document).ready(function(){
     $(".the-order").show();
    
   })
-  $("#checkout").click(function(){
-    var totalSummary=new ShowSummary((document.getElementById("sort"),(document.getElementById("crusty")), (document.getElementById("toppings")),(document.getElementById("num")))
-  });
-})
+  /*$("#checkout").submit(function(){
+    var finalOrder = new ShowSummary(getSize, getCrust, getToppings);
+    console.log(finalOrder);
+    $('#checkout').append("<li>" + finalOrder.summary() + "</li>");
+})*/
                                                                                            
 
 
@@ -58,4 +59,6 @@ $(".sbmt1").click(function (event) {
   else {
     alert("Thank you for contacting us, " + name + ". You will be served.");
   }
+
+});
 });
