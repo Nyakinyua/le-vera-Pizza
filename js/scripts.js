@@ -1,12 +1,12 @@
 //business logic
-/*unction ShowSummary(getSize,getCrust,getToppings){                                                                                             
+function ShowSummary(getSize,getCrust,getToppings){                                                                                             
      this.size = getSize;
     this.crust = getCrust;
      this.toppings = getToppings;
  }
  ShowSummary.prototype.totalSummary=function(){
     return this.getsize + "" + this.getcrust + " " + this.getToppings;
- }*/
+ }
 var sizes= ["small", "medium", "large"]
 $(document).ready(function(){
   var Amount = 0;
